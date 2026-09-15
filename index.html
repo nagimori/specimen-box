@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101312">
+  <meta name="description" content="答えになる前の問いを、ひとつずつ採取した小さなブラウザ作品。">
+  <title>問いの標本箱 — まだ名前のないもの</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <p class="eyebrow">SPECIMEN BOX / VOL. 01</p>
+      <h1>問いの標本箱</h1>
+      <p class="subtitle">まだ名前のないもの</p>
+      <p class="intro">答えになる前の問いを、<br>ひとつずつ採取しています。</p>
+    </header>
+
+    <section class="cabinet" aria-label="標本の一覧">
+      <div class="cabinet-top"><span>12 specimens</span><span>open slowly</span></div>
+      <div id="specimen-grid" class="specimen-grid"></div>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+      <p class="eyebrow">ABOUT THIS WORK</p>
+      <h2 id="about-title">答えになる前の問いを、<br>ひとつずつ。</h2>
+      <p>『問いの標本箱』は、すぐに答えを出さずに残しておきたい問いを、標本のように並べた小さな作品です。</p>
+      <p>気になる問いをひとつ選んで、採取されたときのことと、いま思うことを読んでください。ここにあるのは結論ではなく、問いがまだ開いている時間です。</p>
+      <p class="about-note">12 questions / no answer required</p>
+    </section>
+
+    <section id="viewer" class="viewer" aria-live="polite" hidden>
+      <button id="close" class="close" type="button" aria-label="標本を閉じる">× 閉じる</button>
+      <div class="viewer-inner">
+        <p id="viewer-number" class="eyebrow"></p>
+        <p id="viewer-question" class="question"></p>
+        <div class="divider"></div>
+        <dl class="notes">
+          <div><dt>採取したとき</dt><dd id="viewer-when"></dd></div>
+          <div><dt>いま思うこと</dt><dd id="viewer-note"></dd></div>
+        </dl>
+        <p class="unanswered">この標本は、まだ答えを持たない。</p>
+      </div>
+    </section>
+
+    <footer><span>凪の記録</span><span>VOL. 01 / 2026 —</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
